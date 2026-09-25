@@ -13,21 +13,11 @@ void display(int a[], int n)
     printf("\n");
 }
 
-void swap(int *a, int *b)
-{
-    int temp;
-
-    temp = *a;
-    *a = *b;
-    *b = *a;
-
-    swaps++;
-}
-
 void heapify(int a[], int n, int i)
 {
     int largest;
     int left, right;
+    int temp;
 
     largest = i;
     left = 2 * i + 1;
@@ -51,8 +41,6 @@ void heapify(int a[], int n, int i)
 
     if(largest != i)
     {
-        int temp;
-
         temp = a[i];
         a[i] = a[largest];
         a[largest] = temp;
@@ -88,7 +76,7 @@ void heapSort(int a[], int n)
 
         heapify(a, i, 0);
 
-        printf("After moving maximum to position %d: ", i);
+        printf("After extraction %d: ", n - i);
         display(a, n);
     }
 }
