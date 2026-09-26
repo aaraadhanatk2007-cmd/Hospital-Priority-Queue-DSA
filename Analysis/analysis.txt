@@ -1,0 +1,37 @@
+COMPARISON OF OBSERVED OPERATIONS
+
+Algorithm    Comparisons    Swaps
+Heap Sort    21             18
+Quick Sort   12             6
+
+
+COMPLEXITY COMPARISON
+
+Heap Sort:
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n log n)
+Space: O(1)
+
+Quick Sort:
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n²)
+Space: O(log n) average
+
+
+ANALYSIS AND JUSTIFICATION
+
+For the given input, Quick Sort performed fewer comparisons
+and swaps than Heap Sort. However, these results are specific
+to the given input.
+
+For the hospital application, patients are continuously
+inserted and the highest-priority patient is needed immediately.
+A Max Heap is suitable because the highest severity score is
+always at the root. Insertion takes O(log n) time and accessing
+the highest-priority patient takes O(1) time.
+
+Therefore, a Max Heap is suitable for the hospital priority
+queue, while Heap Sort and Quick Sort are useful when the
+complete set of severity scores needs to be sorted.
