@@ -1,0 +1,6 @@
+CONCLUSION
+
+Heap Sort and Quick Sort successfully sorted the given patient
+severity scores. For continuous patient insertion and immediate
+access to the highest-priority patient, a Max Heap is suitable
+due to its O(log n) insertion and O(1) highest-priority access.
